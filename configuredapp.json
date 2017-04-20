@@ -1,0 +1,29 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "HelloWorld",
+        "description": "Hello World Example",
+        "url": "http://localhost:5000",
+        "uuid": "HelloWorld-9ezuafh3nay4t4cqb3issjor",
+        "autoShow": true,
+        "frame": false,
+        "defaultHeight": 200,
+        "defaultWidth": 300,
+        "defaultTop": 10,
+        "deafultLeft": 10,
+        "saveWindowState": false,
+        "cornerRounding": {
+            "width": 10,
+            "height": 10
+        }
+    },
+    "runtime": {
+        "arguments": "",
+        "version": "6.49.20.3"
+    },
+    "shortcut": {
+        "company": "MyCompany",
+        "description": "Openfining our Webapp",
+        "name": "HelloWorld"
+    }
+}

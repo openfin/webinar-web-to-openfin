@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Web To OpenFin</title>
+  </head>
+  <body>
+    <h1 class="headline">Hello World</h1>
+    <a href="datapage.html" class="link">My Data</a>
+    <div id="time" class="time"></div>
+    <div id="notificationClicked" class="alert"></div>
+    <br />
+    <button onclick="showMyData()">My Data</button>
+    <button onclick="closeMyApp()">Close Me</button>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script>
+      var timeElement = document.getElementById("time");
+      function setTime() {
+        timeElement.innerHTML = new Date().toLocaleString();
+      }
+      setTime();
+      var clockIntervalId = setInterval( function(){ setTime() }, 1000);
+      function closeMyApp(){
+        fin.desktop.Application.getCurrent().close();
+      }
+      function showMyData(){
+        new fin.desktop.Window({
+          name: "dataWindow",
+          url: "datapage.html",
+          defaultLeft: 10,
+          defaultTop: 220,
+          autoShow: true
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+html {
+  background-color: silver;
+}
+
+.headline {
+  text-align: center;
+  color: DarkBlue;
+  border-style: solid;
+}
+
+.headlineFixed {
+  text-align: center;
+  color: DarkBlue;
+  border-style: solid;
+}
+
+.time {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  display: block;
+}
+
+table, th, td {
+   border: 1px solid black;
+    -webkit-app-region: drag;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+.notification {
+  color: DarkBlue;
+  display: flex;
+  justify-content: center;
+}
+
+.alert {
+  text-align: center;
+  color: DarkRed;
+}

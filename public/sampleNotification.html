@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+  <div class="notification">Notification</div>
+  <div id="time" class="notification"></div>
+  <script>
+    function onNotificationMessage(message) {
+      document.getElementById("time").innerHTML = message;
+    }
+  </script>
+</body>
+</html>

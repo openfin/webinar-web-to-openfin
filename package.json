@@ -1,0 +1,19 @@
+{
+  "name": "openfin-your-web-app",
+  "version": "0.0.0",
+  "description": "Taking an existing webpage and add OpenFin functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "OpenFin",
+    "Web",
+    "Webapp"
+  ],
+  "author": "OpenFin",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
