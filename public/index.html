@@ -25,13 +25,17 @@
         fin.desktop.Application.getCurrent().close();
       }
       function showMyData(){
-        new fin.desktop.Window({
-          name: "dataWindow",
-          url: "datapage.html",
-          defaultLeft: 10,
-          defaultTop: 220,
-          autoShow: true
-        });
+        if (typeof fin !== 'undefined') {
+            new fin.desktop.Window({
+              name: "dataWindow",
+              url: "datapage.html",
+              defaultLeft: 10,
+              defaultTop: 220,
+              autoShow: true
+            });
+        } else {
+            window.open('datapage.html');
+        }
       }
     </script>
   </body>
